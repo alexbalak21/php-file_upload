@@ -1,5 +1,5 @@
 <?php
-$target_dir = "uploads/";
+$target_dir = "public/uploads/";
 $target_file = $target_dir . basename($_FILES["fileToUpload"]["name"]);
 $uploadOk = 1;
 $imageFileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
@@ -46,4 +46,18 @@ if ($uploadOk == 0) {
     echo "Sorry, there was an error uploading your file.";
   }
 }
+
+echo "<br><br><br><br>";
+echo "POST:<br>";
+var_dump($_POST);
+echo "<br>SERVER:<br>";
+var_dump($_SERVER);
+echo "<br>FILES:<br>";
+var_dump($_FILES);
+
+
+
+
+
+
 ?>
