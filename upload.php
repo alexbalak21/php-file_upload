@@ -1,10 +1,5 @@
 <?php
 
-if(isset($_FILES['fileToUpload']))
-imgFileUpload();
-
-echo $_FILES['uploaded'];
-
 function imgFileUpload(){
 
 $error = 0;
